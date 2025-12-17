@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===============================
+   DEFAULT (DESKTOP + LANDSCAPE)
+================================ */
+body {
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("images/all.eyez/desktop.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===============================
+   HP PORTRAIT REAL (AMPUH)
+   TANPA ORIENTATION
+================================ */
+@media (max-width: 480px) {
+  body {
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.75)
+      ),
+      url("baru/eyezout.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+/* ===============================
+   CARD (ASLI PUNYA KAMU)
+================================ */
+.card {
+  width: 360px;
+  background: rgba(15,15,15,0.93);
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+}
+
+/* ===============================
+   TEXT
+================================ */
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.venue,
+.date,
+.price {
+  font-size: 14px;
+  margin: 5px 0;
+  opacity: .9;
+}
+
+/* ===============================
+   LINEUP
+================================ */
+.lineup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.lineup label {
+  font-size: 13px;
+  background: #222;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lineup input {
+  margin-right: 6px;
+}
+
+/* ===============================
+   FORM
+================================ */
+h3 {
+  margin: 18px 0 10px;
+  font-size: 15px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=file] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* ===============================
+   UPLOAD LABEL
+================================ */
+.upload-label {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #ccc;
+  text-align: left;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #ff2e2e;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4d4d;
+  transform: scale(1.03);
+}
+
+#msg {
+  margin-top: 12px;
+  font-size: 13px;
+}
+@media (max-width: 480px) {
+ body {
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.75)
+      ),
+      url("baru/potrait.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
